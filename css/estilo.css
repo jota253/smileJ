@@ -1,0 +1,70 @@
+.invisivel {
+  display: none;
+}
+
+.visivel {
+  display: inline;
+}
+
+.inicial {
+  text-align: center;
+  font-size: 100px;
+  background-color: rgb(206, 17, 143); /* Azul claro */
+  width: 150px;
+  height: 200px;
+  border: 15px solid black; /* Borda preta */
+  padding: 10px;
+  margin: 20px;
+}
+
+.acertou {
+  text-align: center;
+  color: yellow;
+  background-color: darkblue; /* Azul escuro */
+  width: 150px;
+  height: 200px;
+  border: 15px solid yellow;
+  padding: 10px;
+  margin: 20px;
+}
+
+.errou {
+  text-align: center;
+  font-size: 100px;
+  color: rgb(207, 94, 59);
+  background-color: rgb(212, 237, 238);
+  width: 150px;
+  height: 200px;
+  border: 15px solid black;
+  padding: 10px;
+  margin: 20px;
+}
+
+.inicial {
+  text-align: center;
+  font-size: 100px;
+  background-color: rgb(238, 231, 228);
+  width: 150px;
+  height: 200px;
+  border: 15px solid green;
+  padding: 10px;
+  margin: 20px;
+  position: relative; /* Adicionando posição relativa */
+}
+
+.acertou, .errou {
+  position: relative; /* Adicionando posição relativa */
+}
+
+.errou img {
+  position: absolute; /* Posicionando a imagem de erro */
+  bottom: 0px; /* Ajusta a distância da parte inferior */
+  left: 50%;
+  transform: translateX(-50%); /* Centraliza horizontalmente */
+  max-width: 90%; /* Ajusta o tamanho para caber dentro da carta */
+  max-height: 70%; /* Ajusta a altura para não sair da carta */
+}
+
+body {
+  background-color: rgb(48, 85, 247);
+}
